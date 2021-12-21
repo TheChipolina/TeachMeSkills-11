@@ -1,0 +1,139 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, span, p, li, button, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, span, p, li {
+    color: $primary-text;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 150px;
+
+    .logo-wrapper {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        span {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 28px;
+        }
+    }
+
+    .nav-wrapper {
+        margin-left: auto;
+        margin-right: 25px;
+
+        .nav-list {
+            display: flex;
+            gap: 30px;
+            margin-right: 25px;
+
+            li {
+                list-style-type: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                cursor: pointer;
+
+                &:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .button-primary {
+        &.transparent {
+            margin-right: 25px;
+        }
+    }
+}
+
+.button-primary {
+    background: $primary-bg;
+    border-radius: 4px;
+    width: 110px;
+    height: 43px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $third-text;
+    cursor: pointer;
+
+    &.transparent {
+        border: 1px solid $primary-border;
+        color: $primary-text;
+        background: transparent;
+    }
+}
+
+.main-wrapper {
+    height: calc(100vh - 83px);
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    justify-content: space-between;
+
+    .main-info-wrapper {
+
+        .main-title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .main-actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-default {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.product-wrapper {
+    height: 100vh;
+}
+
+.text-default {
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.item-player {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #02897A;
+    border-bottom: 10px solid transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.link {
+    color: $primary-bg;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5px;
+}
